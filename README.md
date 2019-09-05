@@ -1,4 +1,4 @@
-# [ModuloGestionDeInventarios](https://github.com/lone-wolf-96/ModuloGestionDeInventarios/)
+# [Módulo de Gestión de Inventarios](https://github.com/lone-wolf-96/ModuloGestionDeInventarios/)
 
 Pequeño módulo de gestión de inventarios.
 
@@ -17,7 +17,7 @@ Aunque para la construcción de este pequeño proyecto, se empleó Visual Studio
 
 ## Contributing
 
-Todo tipo de sugerencias son bienvenidas. Este proyecto tiene propósitos académicos solamente.
+Todo tipo de sugerencias son bienvenidas. Este proyecto tiene propósitos académicos solamente, puede tener vulnerabilidades.
 
 ## License
 
