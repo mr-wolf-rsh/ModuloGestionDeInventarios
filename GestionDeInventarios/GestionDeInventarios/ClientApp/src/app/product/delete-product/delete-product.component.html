@@ -1,0 +1,33 @@
+<div class="col-7 fullcenter">
+  <form name="deleteForm" (ngSubmit)="deleteProduct(deleteForm.form.invalid)" #deleteForm="ngForm">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Eliminar Artículo</h2>
+      </div>
+      <div class="card-body">
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="code">Código:</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" name="deleteCode" #deleteCode="ngModel" [(ngModel)]="codeProduct"
+              pattern="^ART\d{7}$" required>
+            <div *ngIf="setValidationMessageCondition(deleteCode)" class="text-danger">
+              <div *ngIf="deleteCode.errors.required">
+                El código de producto es requerido.
+              </div>
+              <div *ngIf="deleteCode.errors.pattern">
+                Debe tener el formato ARTxxxxxxx (Donde x son dígitos).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="col-3 fullcenter">
+          <button type="submit" class="btn btn-danger" [disabled]="deleteForm.form.invalid">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,18 @@
+button {
+  text-align: center;
+  width: 100%;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top-color: transparent;
+}
+
+.card-title {
+  text-align: center;
+}

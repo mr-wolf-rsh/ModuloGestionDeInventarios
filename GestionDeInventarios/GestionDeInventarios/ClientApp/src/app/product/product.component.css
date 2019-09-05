@@ -1,0 +1,12 @@
+.col-12>.col-6 {
+  text-align: center;
+}
+
+.card-header {
+  background-color: transparent;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top-color: transparent;
+}

@@ -1,0 +1,78 @@
+<div class="col-7 fullcenter">
+  <form name="updateForm" (ngSubmit)="updateProduct(updateForm.form.invalid)" #updateForm="ngForm">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Modificar Artículo</h2>
+      </div>
+      <div class="card-body">
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="code">Nombre:</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" name="updateName" #updateName="ngModel"
+              [(ngModel)]="productRequest.name" required>
+            <div *ngIf="setValidationMessageCondition(updateName)" class="text-danger">
+              <div *ngIf="updateName.errors.required">
+                El nombre del producto es requerido.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="code">Código:</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" name="updateCode" #updateCode="ngModel"
+              [(ngModel)]="productRequest.code" pattern="^ART\d{7}$" required>
+            <div *ngIf="setValidationMessageCondition(updateCode)" class="text-danger">
+              <div *ngIf="updateCode.errors.required">
+                El código de producto es requerido.
+              </div>
+              <div *ngIf="updateCode.errors.pattern">
+                Debe tener el formato ARTxxxxxxx (Donde x son dígitos).
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="code">Descripción:</label>
+          </div>
+          <div class="col-8">
+            <input type="text" class="form-control" name="updateDescription" #updateDescription="ngModel"
+              [(ngModel)]="productRequest.description" required>
+            <div *ngIf="setValidationMessageCondition(updateDescription)" class="text-danger">
+              <div *ngIf="updateDescription.errors.required">
+                La descripción es requerida.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="code">Cantidad:</label>
+          </div>
+          <div class="col-8">
+            <input type="number" class="form-control" name="updateStock" #updateStock="ngModel"
+              [(ngModel)]="productRequest.stock" pattern="^\d+$" required>
+            <div *ngIf="setValidationMessageCondition(updateStock)" class="text-danger">
+              <div *ngIf="updateStock.errors.required">
+                La cantidad inicial es requerida.
+              </div>
+              <div *ngIf="updateStock.errors.pattern">
+                Debe ser un número positivo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="col-3 fullcenter">
+          <button type="submit" class="btn btn-success" [disabled]="updateForm.form.invalid">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
