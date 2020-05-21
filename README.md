@@ -1,10 +1,10 @@
-# [Módulo de Gestión de Inventarios](https://github.com/lone-wolf-96/ModuloGestionDeInventarios/)
+# [Módulo de Gestión de Inventarios](https://github.com/mr-wolf-rsh/ModuloGestionDeInventarios/)
 
 Pequeño módulo de gestión de inventarios.
 
 ## Configuración
 
-Las instrucciones necesarias se encuentran en el archivo [Doc_GestionDeInventarios.docx](https://github.com/lone-wolf-96/ModuloGestionDeInventarios/blob/master/Doc_GestionDeInventarios.docx)
+Las instrucciones necesarias se encuentran en el archivo [Doc_GestionDeInventarios.docx](https://github.com/mr-wolf-rsh/ModuloGestionDeInventarios/blob/master/Doc_GestionDeInventarios.docx)
 
 ### Instalación
 
@@ -13,7 +13,7 @@ Aunque para la construcción de este pequeño proyecto, se empleó Visual Studio
 
 ## Autor(es)
 
-* **LoneWolf96** - *Final work* - [lone-wolf-96](https://github.com/lone-wolf-96/)
+* **Renzo S.** - *Final work* - [mr-wolf-rsh](https://github.com/mr-wolf-rsh/)
 
 ## Contributing
 
