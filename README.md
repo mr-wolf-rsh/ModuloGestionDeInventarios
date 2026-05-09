@@ -15,10 +15,10 @@ Aunque para la construcción de este pequeño proyecto, se empleó Visual Studio
 
 * **Renzo S.** - *Final work* - [mr-wolf-rsh](https://github.com/mr-wolf-rsh/)
 
-## Contributing
+## Contribución
 
 Todo tipo de sugerencias son bienvenidas. Este proyecto tiene propósitos académicos solamente, puede tener vulnerabilidades.
 
-## License
+## Licencia
 
 Este proyecto esta licenciado bajo [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/).
